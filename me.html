@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan Rudd - Professional Web Developer</title>
+    <link rel="stylesheet" href="./styles/demos/hebbia.css">
+    <script src="https://kit.fontawesome.com/1efa830cb3.js" crossorigin="anonymous"></script>
+    <script defer src="./scripts/loader.js"></script>
+
+</head>
+
+<body>
+    <div class="loading-container">
+        <div class="loading-container-balls">
+            <div class="loading-ball ball-one"></div>
+            <div class="loading-ball ball-two"></div>
+            <div class="loading-ball ball-three"></div>
+        </div>
+    </div>
+    <nav>
+        <div class="logo">
+            <img src="./images/hebbia/sig.png" alt="">
+        </div>
+
+        <div class="nav-items">
+            <ul>
+                <li class="nav-crumb"><a href="#">Home</a></li>
+                <li class="nav-crumb"><a href="#about">About</a></li>
+                <li class="nav-crumb"><a href="#contact">Pricing</a></li>
+                <li class="nav-crumb"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="hero" id="#">
+        <div class="content">
+            <h1>Crafting High-Quality Websites</h1>
+            <p>The most damaging phrase in the language is "It's always been done this way"<br><i>- Grace Hopper</i></p>
+    
+            <div class="insights">
+                <div class="companies">
+                    <div class="company">
+                        <i class="fa fa-html5"></i>
+                    </div>
+                    <div class="company" style="right: 20px;">
+                        <i class="fa fa-css3"></i>
+                    </div>
+                    <div class="company" style="right: 40px;">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <div class="company" style="right: 60px;">
+                        <i class="fab fa-react"></i>
+                    </div>
+                </div>
+                <div class="companies-header">
+                    <h3><span>5+</span><br>Years of Expertise</h3>
+                </div>
+                
+                <div class="para">
+                    <p>Ryan Rudd is a Freelance Wev Developer<br> well as a full-stack developer</p>
+                </div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="./images/hebbia/hero.png" alt="">
+        </div>
+        <div class="socials">
+            <a href="https://twitter.com/MrRyanRudd"><i class="fa-brands fa-twitter" style="font-size: 1.5rem;"></i></a>
+            <a href="https://www.instagram.com/ryan.ruddd/"><i class="fa-brands fa-instagram" style="font-size: 1.5rem;"></i></a>
+            <a href="https://dribbble.com/ryan-rudd"><i class="fa-brands fa-dribbble" style="font-size: 1.5rem;"></i></a>
+
+        </div>
+    </div>
+    <section id="about">
+        <h3>Let me introduce myself</h3>
+        <h1>About me</h1>
+        <div class="container">
+            <div class="contents">
+                <p>I'm Ryan Sam Rudd, a dedicated Freelance Full-Stack Developer based in Wellington, Florida, with a passion for coding that began at the age of 5. With 11 years of experience, despite being just 16 years old, I bring a wealth of expertise and an unwavering commitment to excellence to every project.</p>
+                <p>I specialize in both frontend and backend web development, crafting robust server-side logic with JavaScript and Python and creating immersive user interfaces using EJS, CSS, and HTML. I frequently utilize Express.js to deliver dynamic, responsive, and feature-rich web experiences that captivate users.</p>
+                <p>My journey in web development includes diverse freelance projects like athleteunseen.com and aiweddingplans.com, showcasing my dedication to excellence and ability to conquer complex challenges.</p>
+                <p>Beyond my coding skills, I'm a versatile individual, excelling in varsity baseball and as an IB student, demonstrating my ability to balance sports and academics effectively.</p>
+            </div>
+        </div>
+    </section>
+</body>
+<style>
+    html
+    {
+        scroll-behavior: smooth;
+    }
+    #about *
+    {
+        margin: 0;
+    }
+    #about
+    {
+        position: absolute;
+        top: 100vh;
+        width: 60%;
+        margin-left: 20%;
+        display: flex;
+        flex-direction: column;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    #about .container 
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #about p
+    {
+        margin: 10px 0px;
+        color: rgb(226, 226, 226);
+    }
+    #about h3
+    {
+        color: rgb(172, 172, 172);
+    }
+    #about h1
+    {
+        color: rgb(255, 255, 255);
+        font-size: 3rem;
+    }
+    a > i 
+    {
+        color: #fff;
+    }
+    body,
+    html {
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        background-color: var(--main);
+    }
+    
+     :root {
+        --main: #050d13;
+        --main-bg-accent: #07131b;
+        --accent-one: #131e49;
+        --text: #fff;
+        --text-accent: #e4e4e4;
+    }
+    
+    nav {
+        align-items: center;
+        margin: 20px 5%;
+        color: var(--text);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        letter-spacing: -1px;
+        width: 80%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    nav .nav-req-demo a 
+    {
+        text-decoration: none;
+        width: fit-content;
+        height: fit-content;
+        padding: .6rem 2rem;
+        letter-spacing: 2px;
+        color: unset;
+    }
+    
+    nav h1 {
+        font-weight: bolder;
+    }
+    
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }
+    
+    nav ul li {
+        margin: 0px 25px;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: unset;
+    }
+    .logo img{
+        width: 150px;
+        opacity: .8;
+        height: auto;
+        filter: invert();
+        padding: 0;
+        margin: 25px;
+    }
+    .hero 
+    {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: auto 20px;
+    }
+    .hero div.image
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero div.content
+    {
+        color: var(--text);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        margin-left: 15%;
+    }
+    .hero div h1 
+    {
+        font-weight: 500;
+        letter-spacing: 1px;
+        font-size: 43px;
+        width: 70%;
+    }
+    .hero div p 
+    {
+        line-height: 30px;
+        letter-spacing: 2px;
+    }
+    .hero .insights
+    {
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 25px;
+        
+    }
+    .insights > div 
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero .insights .companies
+    {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+        width: min-content;
+        justify-content: center;
+        text-align: center;
+    }
+    .hero .companies .company 
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 60px;
+        height: 60px;
+        border-radius: 50px;
+        background-color: var(--accent-one);
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.342);
+    }
+    .hero .companies .company i 
+    {
+        font-size: 28px;
+    }
+    .hero .insights .para p
+    {
+        line-height:normal;
+        letter-spacing: 1px;
+    }
+    .companies-header
+    {
+        width: fit-content;
+        display: flex;
+        text-align: center;
+    }
+    .companies-header h3 
+    {
+        font-weight: lighter;
+
+    }
+    .companies-header h3 span 
+    {
+        font-weight: 400;
+        font-size: 33px;
+    }
+    .insights .para 
+    {
+        text-wrap: nowrap;
+    }
+    .socials
+    {
+        width: 90vw;
+        color: white;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        height: auto;
+        margin: 5vw;
+    }
+    .socials i
+    {
+        font-style: 53px;
+        margin: 15px;
+        height: fit-content;
+        width: fit-content;
+    }
+    .loading-container {
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--main);
+        z-index: 9999;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .loading-container-balls {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 70px;
+        height: auto;
+    }
+    
+    .loading-ball {
+        position: relative;
+        border-radius: 100px;
+        width: 20px;
+        height: 20px;
+        background-color: var(--accent-one);
+    }
+    
+    .ball-one {
+        animation-name: ball-loading-animation;
+        animation-duration: .8s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-delay: .2s;
+    }
+    
+    .ball-two {
+        animation-name: ball-loading-animation;
+        animation-duration: .8s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-delay: .4s;
+    }
+    
+    .ball-three {
+        animation-name: ball-loading-animation;
+        animation-duration: .8s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-delay: .6s;
+    }
+    @keyframes ball-loading-animation {
+        0% {
+            top: 0px;
+        }
+        15% {
+            top: 3px;
+        }
+        30% {
+            top: -7px;
+        }
+        55% {
+            top: 3px;
+        }
+        100% {
+            top: 0px;
+        }
+    }
+</style>
